@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url('bg.jpg');
+  
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    height: 500x;
+    overflow: hidden;
+  
+   
+}
+.hero{
+    background-image: url('sprite-sheet-animations-tutorial-504830.png');
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 150px;
+    background-size: cover;
+    
+    position: absolute;
+    bottom: 80px;
+}
+.villan{
+    background-image: url('BackgroundEraser_20210319_204439832.png');
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 150px;
+    background-size: cover;
+    bottom: 60px;
+    position:absolute;
+    left: 50vw;
+  
+}
+.gameover{
+    visibility: hidden;
+    position: absolute;
+ margin-top: 150px;
+    font-size: 80px;
+    margin-left: 500px;
+ 
+    
+}
+
+#scorecont{
+  margin-top: 15px;  
+margin-right: 15px;
+float: right;
+font-size: 20px;
+
+
+}
+
+.but{
+    margin-top: 150px;
+    padding: 5px;
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 100px;
+    font-weight: 300;
+    font-size: 20px;
+    border:5px solid #4fe6e0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 1.5s;
+    background-color: aquamarine;
+    color: rgb(48, 214, 159);
+}
+
+.but:hover{
+    box-shadow: 0 5px 0 #6aceca inset, 0 5px 0  #71c9c6 ;
+}
+
+.animateHero{
+    animation: animateHero 1.5s linear infinite ;
+}
+
+@keyframes animateHero{
+
+0%{
+    bottom: 80px;
+}
+50%{
+    bottom: 330px;
+}
+100%{
+    bottom: 80px;
+}
+
+}
+.villanAni{
+    animation: villanAni 2.5s linear infinite;
+}
+@keyframes villanAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+
+.exit{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    border:1px solid #eb0505;
+    background-color: red;
+    border-radius: 30%;   
+
+}
+
+.restart{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    border:1px solid #10e708;
+    background-color: rgb(21, 255, 0);
+    border-radius: 30%;
+}
+
+.exit:hover{
+       color: rgb(234, 238, 12);
+}
+.restart:hover{
+    color: rgb(248, 232, 4);
+}
